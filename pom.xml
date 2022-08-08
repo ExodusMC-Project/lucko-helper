@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
+    <modelVersion>4.0.0</modelVersion>
     <groupId>me.lucko</groupId>
     <artifactId>helper-parent</artifactId>
     <version>5.0.0</version>
@@ -35,6 +35,9 @@
             <email>git@lucko.me</email>
             <url>https://github.com/lucko</url>
         </developer>
+        <developer>
+            <name>Exodus Engineering team</name>
+        </developer>
     </developers>
 
     <scm>
@@ -59,25 +62,12 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>luck-snapshots</id>
-            <url>https://nexus.lucko.me/repository/maven-snapshots/</url>
-        </snapshotRepository>
         <repository>
-            <id>luck-releases</id>
-            <url>https://nexus.lucko.me/repository/maven-releases/</url>
+            <id>github</id>
+            <name>ExodusMC-Project</name>
+            <url>https://maven.pkg.github.com/ExodusMC-Project/lucko-helper</url>
         </repository>
     </distributionManagement>
-
-    <ciManagement>
-        <system>Jenkins</system>
-        <url>https://ci.lucko.me/job/helper</url>
-    </ciManagement>
-
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/lucko/helper/issues</url>
-    </issueManagement>
 
     <profiles>
         <profile>
@@ -135,5 +125,4 @@
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
     </repositories>
-
 </project>
