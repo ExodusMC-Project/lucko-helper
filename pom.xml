@@ -121,6 +121,10 @@
             <url>https://repo.lucko.me/</url>
         </repository>
         <repository>
+            <id>ExodusMC</id>
+            <url>https://maven.pkg.github.com/ExodusMC-Project/lucko-helper</url>
+        </repository>
+        <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
